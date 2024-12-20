@@ -1,12 +1,19 @@
+import React from 'react'
+import { Routes, Route } from 'react-router-dom';
+// layout
+import Hd from './layout/Hd';
+import Ft from './layout/Ft';
+// page
+import Home from './contents/home/Home';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        test
-      </header>
+    <div>
+      <Hd></Hd>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+      </Routes>
+      <Ft></Ft>
     </div>
-  );
+  )
 }
-
-export default App;

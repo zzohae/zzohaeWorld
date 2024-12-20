@@ -1,0 +1,100 @@
+// 커스텀 클래스
+.bg-main {
+  background-color: var(--main1, #002F87);
+}
+
+.rubik-spray {
+  font-family: 'Rubik Spray Paint', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-mono {
+  font-family: "Rubik Mono One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fc-sub {
+  color: var(--sub1, #F24E07);
+}
+
+.fcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fcs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.fsc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.fcb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Header (Hd.js)
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: var(--white-alter, #FEFEFE);
+  transition: transform 0.3s ease;
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &.hide {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+}
+
+// Footer (Ft.js)
+footer {
+  margin-top: 80px;
+  padding: 30px 0;
+  > .container {
+    gap: 20px;
+  }
+  .ftInfo {
+    gap: 12px;
+    align-self: stretch;
+    .ftLogo {
+      padding: 20px 0;
+    }
+    .ftLink {
+      gap: 8px;
+      a {
+        color: var(--white-alter, #FEFEFE);
+        font-size: var(--fs-12, .75rem);
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
+  .copy {
+    color: var(--white-alter, #FEFEFE);
+    font-size: var(--fs-8, .5rem);
+    font-weight: 300;
+    line-height: normal;
+    strong {
+      font-weight: 600;
+    }
+  }
+}
