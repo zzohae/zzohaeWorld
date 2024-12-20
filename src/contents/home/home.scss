@@ -1,0 +1,52 @@
+.c01main {
+  width: 100vw;
+  height: 100vh;
+  > .container {
+    gap: 50px;
+    .zzohae {
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--text-minor-3, #D2D2D2);
+      color: var(--main1, #002F87);
+      .catch {
+        font-size: var(--fs-12, 0.75rem);
+        font-weight: 600;
+        line-height: 140%;
+        span {
+          font-size: var(--fs-24, 1.5rem);
+        }
+      }
+      div {
+        margin-top: -15px;
+        gap: 10px;
+        h1 {
+          font-size: var(--fs-56, 3.5rem);
+          line-height: 1;
+          text-shadow: 0px 0px 3px var(--white-alter, #FEFEFE);
+        }
+        p {
+          font-weight: 600;
+        }
+      }
+    }
+    ul {
+      gap: 12px;
+      li {
+        a {
+          font-size: var(--fs-18, 1.125rem);
+          font-weight: 600;
+          color: var(--text-minor-1, #888);
+          height: 20px;
+          gap: 8px;
+          svg {
+            width: 20px;
+            height: 20px;
+            color: inherit;
+          }
+        }
+        &:hover a {
+          color: var(--sub1, #F24E07);
+        }
+      }
+    }
+  }
+}
