@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ProfileMain from '../sub_profile/ProfileMain'
 import './home.scss'
 import { ReactComponent as Logo } from '../../assets/common/logo.svg'
 import { ReactComponent as RCh } from '../../assets/common/chevron_right.svg'
@@ -28,7 +29,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>profile</div>
+      <ProfileMain></ProfileMain>
       <div>web</div>
       <div>design</div>
       <div>contact</div>
