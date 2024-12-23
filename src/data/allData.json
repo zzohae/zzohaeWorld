@@ -1,0 +1,292 @@
+{
+  "profileData": {
+    "edu": [
+      { "content": "한국외국어대학교(서울) 졸업",
+        "description": "미디어커뮤니케이션학부 언론정보전공|독일어과(이중)" }
+    ],
+    "awards": [
+      { "content": "한국외국어대학교 서울시캠퍼스사업단과 총학이 함께하는 창업 서포터즈 'BOO-UP' 1기", "description": "[최우수상]" },
+      { "content": "웹퍼블리셔(UIUX)&프론트엔드개발(API, ChatGPT, 피그마, 리액트, 뷰)기업플랫폼프로젝트", "description": "[우수훈련생]" }
+    ],
+    "training": [
+      { "academy": "[KDT] 그린컴퓨터아트학원 신도림",
+        "content": "웹퍼블리셔(UIUX)&프론트엔드개발(API, ChatGPT, 피그마, 리액트, 뷰)기업플랫폼프로젝트",
+        "date": "(2024.06.24 ~ 2024.12.27)" },
+      { "academy": "[KDC] 패스트캠퍼스",
+        "content": "UX/UI 디자인 첫걸음 시작하기",
+        "date": "(2023.07.05 ~ 2023.08.30)" },
+      { "academy": "[KDC] 클래스101",
+        "content": "Blender(블렌더)로 완성하는 3D 애니메이션",
+        "date": "(2023.01.06 ~ 2023.02.26)" }
+    ],
+    "ability" : [
+      { "content": "Frontend", "description": "html5|css3|javascript|sass|react|bootstrap" },
+      { "content": "Backend", "description": "node.js|php" },
+      { "content": "Database", "description": "myphpadmin|supabase" },
+      { "content": "Collaboration", "description": "confluence|slack|github|figma" },
+      { "content": "Design", "description": "illustrator|photoshop|blender" }
+    ]
+  },
+  "expData": [
+    { "date" : "2019.03 -|2021.04",
+    "content": "광장영어 @보조강사",
+    "description": "중1~고2 조교 및 보조강사, 전단 제작" },
+    { "date" : "2019.04 -|2019.08",
+    "content": "제32대 @사회과학대학 학생회@ ‘스펙트럼’ 홍보소통국원",
+    "description": "홍보물 제작, 인스타그램 관리" },
+    { "date" : "2019.09 -|2020.04",
+    "content": "‘스펙트럼’ @홍보소통국장",
+    "description": "1년간 300개 게시글 업로드, 팔로워 200 -> 600명" },
+    { "date" : "2020.04 -|2021.03",
+    "content": "제54대 @총학생회@ ‘새벽으로부터’ 미디어소통국원",
+    "description": "" },
+    { "date" : "2020.08 -|2020.11",
+    "content": "한국외국어대학교 온라인 축제 'Quinquatria PLUS' @기획단",
+    "description": "굿즈팀(MD 검수, 발주, 포장, 배송), 프로그램 로고 제작" },
+    { "date" : "2021.01 -|2021.12",
+    "content": "제34대 사회과학대학 학생회 ‘시너지’ @인권연대국장",
+    "description": "" },
+    { "date" : "2021.09 -|2022.12",
+    "content": "맘스터치 광장동점",
+    "description": "홀 관리, 고객 응대, 포장 등" },
+    { "date" : "2022.09 -|2022.12",
+    "content": "'BOO-UP' 1기 @[최우수상]",
+    "description": "미션 우수 수행, 단체 미션 참여, 개인 제작 콘텐츠" },
+    { "date" : "2023.08 -",
+    "content": "롯데리아 강변씨네마점",
+    "description": "홀 응대 및 청소, 포장, 조리업무 전반" }
+  ],
+  "myphotos" : [
+    { "src": "film_4", "alt" : "Kodak GOLD200, pentaxMX, 2021" },
+    { "src": "life_24", "alt" : "2024 서울카페쇼" },
+    { "src": "life_2", "alt" : "베브릿지" },
+    { "src": "life_17", "alt" : "팀홀튼" },
+    { "src": "film_6", "alt" : "Kodak GOLD200, pentaxMX, 2021" },
+    { "src": "film_7", "alt" : "Kodak GOLD200, pentaxMX, 2021" },
+    { "src": "life_1", "alt" : "서울숲 나들이" },
+    { "src": "film_9", "alt" : "Kodak ColorPlus200, pentaxMX, 2022" },
+    { "src": "film_12", "alt" : "Kodak GOLD200, pentaxMX, 2021" },
+    { "src": "film_13", "alt" : "Kodak GOLD200, pentaxMX, 2021" },
+    { "src": "film_16", "alt" : "Ilford Delta400, pentaxMX, 2022" },
+    { "src": "film_17", "alt" : "Ilford Delta400, pentaxMX, 2022" },
+    { "src": "film_18", "alt" : "Kodak ColorPlus200, Kodak M35, 2021" },
+    { "src": "film_19", "alt" : "Kodak ColorPlus200, Kodak M35, 2021" },
+    { "src": "film_21", "alt" : "FujiFilm Xtra400, pentaxMX, 2023" },
+    { "src": "film_22", "alt" : "FujiFilm Xtra400, pentaxMX, 2023" },
+    { "src": "life_16", "alt" : "서포터즈 최우수상" },
+    { "src": "life_18", "alt" : "브리즈 아트페어" },
+    { "src": "life_19", "alt" : "태국 3D 뮤지엄" },
+    { "src": "life_21", "alt" : "그라운드시소 이경준 사진전, ONE STEP AWAY" },
+    { "src": "life_22", "alt" : "인천 펜타포트 락 페스티벌" }
+  ],
+  "webWorks" : [
+    {
+      "prjName" : "청량마켓몰 리뉴얼 프로젝트",
+      "mockup" : "",
+      "linkto" : "https://cheonglyang-react.vercel.app/",
+      "about" : {
+        "team": "3인 팀 작업",
+        "date": "2024.11.1 - 2024.12.17 (약 7주)"
+      },
+      "contribution" : {
+        "main": "개발 80%",
+        "sub": "기획 10% 디자인 30%"
+      },
+      "environment" : "Node.js, React, Supabase, vercel",
+      "features" : [
+        { "content": "리브랜딩",
+        "description": "로고 리디자인 및 시그니처 로고 제작, 브랜드의 새로운 입지 선정" },
+        { "content": "정보구조 개선",
+        "description": "카테고리 개편, 리브랜딩으로 필요하게 된 새로운 메뉴 및 기획전 추가" },
+        { "content": "UX/UI 개선",
+        "description": "전반적 디자인 수정" },
+        { "content": "효율적 코딩",
+        "description": "React의 컴포넌트 재사용을 이용한 효율적이고 빠른 사이트 제작" }
+      ],
+      "Link" : {
+        "figma" : "",
+        "github" : "https://github.com/zzohae/CRA_cheonglyang_team"
+      }
+    },
+    {
+      "prjName" : "리턴잇 랜딩페이지 리뉴얼",
+      "mockup" : "",
+      "linkto" : "https://whgodus00.ivyro.net/mybootstrap/",
+      "about" : {
+        "team": "개인 작업",
+        "date": "2024.09.25 - 2024.10.28 (약 5주)"
+      },
+      "contribution" : {
+        "main": "100%",
+        "sub": ""
+      },
+      "environment" : "Bootstrap 5, HTML5, CSS3, JavaScript, Jquery, 아이비호스팅",
+      "features" : [
+        { "content": "랜딩 콘텐츠 재선정",
+        "description": "‘빠른 문의’ 폼, 정량적 수치 제시, 후기 메인 노출로 브랜드와 서비스에 대한 신뢰도 제고" },
+        { "content": "접속 환경에 따른 UI 구현",
+        "description": "다양한 기기 환경의 GNB UI 구현" },
+        { "content": "코드 재사용과 유지보수",
+        "description": "header / footer PHP로 분리, api 연동을 위한 json 통합, scss 사용" },
+        { "content": "설계 & 기능 구현",
+        "description": "DB설계를 통해 기존 하나였던 폼을 3개로 분리, 폼 & PHP & DB연동" }
+      ],
+      "Link" : {
+        "figma" : "",
+        "github" : "https://github.com/zzohae/bootstrap"
+      }
+    },
+    {
+      "prjName" : "개인 포트폴리오 사이트 제작",
+      "mockup" : "",
+      "linkto" : "",
+      "about" : {
+        "team": "개인 작업",
+        "date": "2024.12.17 - 진행중"
+      },
+      "contribution" : {
+        "main": "개인 작업",
+        "sub": ""
+      },
+      "environment" : "Node.js, React, Bootstrap",
+      "features" : [
+        { "content": "100% 셀프 기획 & 설계",
+        "description": "콘텐츠 기획, 컴포넌트 구조 설계, 데이터 설계 및 작성, 디자인, 코딩까지 모두 가능하다는 것을 보여주는 작업" },
+        { "content": "코드 재사용",
+        "description": "페이지별 노출되는 콘텐츠를 다르게 하여 메인에서는 요약된 내용, 서브에서는 세부내용을 볼 수 있도록 함" }
+      ],
+      "Link" : {
+        "figma" : "https://www.figma.com/design/anc2EvJWs8A4DzHhR3KrGq/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=0-1&t=PQ146AZX072TCjUB-1",
+        "github" : "https://github.com/zzohae/zzohaeWorld"
+      }
+    }
+  ],
+  "designWorks" : {
+    "poster" : [
+      { "src" : "spctrmweek",
+      "alt" : "사회대 주간 홍보, 2019" },
+      { "src" : "fever2020",
+      "alt" : "오리엔테이션 홍보, 2020" },
+      { "src" : "member",
+        "alt" : "시너지 국원 모집, 2021" },
+      { "src" : "cheonglyanglimun",
+        "alt" : "청량리문 부스 홍보, 2022" }
+    ],
+    "cardNews" : [
+      { "src" : "spctrmweek",
+        "alt" : "사회대 주간 홍보, 2019" },
+        { "src" : "fever2020",
+        "alt" : "오리엔테이션 홍보, 2020" },
+        { "src" : "independenceday",
+        "alt" : "광복절 카드뉴스, 2020" },
+        { "src" : "covidrights",
+        "alt" : "코로나 인권 카드뉴스, 2020" },
+        { "src" : "2020end",
+        "alt" : "상시근무 종료 안내, 2020" },
+        { "src" : "saegidan",
+        "alt" : "새기단 모집 카드뉴스, 2021" },
+        { "src" : "impairmentrights",
+        "alt" : "장애인 인권의 날 3편 내용 중, 2021" },
+        { "src" : "cheonglyanglimun",
+        "alt" : "청량리문 행사 홍보, 2022" },
+        { "src" : "hackerton",
+        "alt" : "해커톤 홍보, 2022" },
+        { "src" : "campusbooth",
+        "alt" : "진로행사 서캠사 부스홍보, 2022" },
+        { "src" : "duh",
+        "alt" : "스냅 & 제품소개 카드뉴스, 2024" },
+        { "src" : "studioad",
+        "alt" : "스튜디오 대여 인스타 광고, 2024" },
+        { "src" : "insta_promo",
+        "alt" : "개강 프로모션 홍보, 2024" },
+        { "src" : "popup1",
+        "alt" : "여름 기획 팝업, 2024" },
+        { "src" : "popup2",
+        "alt" : "여름 기획 팝업, 2024" },
+        { "src" : "popup3",
+        "alt" : "상시 팝업, 2024" }
+    ],
+    "logo" : [
+      { "src" : "yoonha",
+        "alt" : "온라인 축제 방송 로고, 2020" },
+        { "src" : "yoonha_color",
+        "alt" : "온라인 축제 방송 로고, 2020" },
+        { "src" : "hufssearch",
+        "alt" : "온라인 축제 방송 로고, 2020" }
+    ],
+    "banner" : [
+      { "src" : "banner_auth",
+        "alt" : "Sleb! 학생인증 배너" },
+        { "src" : "banner_promo",
+        "alt" : "Sleb! 개강 프로모션 배너" },
+        { "src" : "banner_sayloy",
+        "alt" : "Sleb! 신제품 광고 배너" },
+        { "src" : "banner_signup",
+        "alt" : "Sleb! 회원가입 쿠폰 증정 배너" },
+        { "src" : "banner_snap",
+        "alt" : "Sleb! 스냅샷 홍보 배너" }
+    ],
+    "other" : [
+      { "src" : "minimap",
+      "alt" : "한국외대 약도, 2021" },
+      { "src" : "CLxbanner",
+        "alt" : "서캠사 홍보부스 X배너, 2022" },
+      { "src" : "gubok",
+      "alt" : "구복만두 월드타워점 롯데월드 배너, 2023" },
+      { "src" : "thumb1",
+      "alt" : "더, 세이로이 1+1행사 썸네일, 2024" },
+      { "src" : "thumb2",
+      "alt" : "더, 세이로이 1+1행사 썸네일, 2024" }
+    ],
+    "donguri" : {
+      "insta" : {
+        "src" : "insta",
+        "alt" : "인스타 계정(현재 비활성화)"
+      },
+      "cover": [
+          { "src" : "1",
+          "alt" : "1편 - 이문동에 외계부엉이가?",
+          "linkto" : "https://www.instagram.com/p/CiOx6CavdEH/" },
+          { "src" : "2",
+          "alt" : "2편 - 서캠사 서포터즈 소개",
+          "linkto" : "https://www.instagram.com/p/CitnNi-P3F_/" },
+          { "src" : "3",
+          "alt" : "3편 - 특강후기",
+          "linkto" : "https://www.instagram.com/p/CjUOImsvvyV/" },
+          { "src" : "4",
+          "alt" : "4편 - 독립출판 프로젝트 소개",
+          "linkto" : "https://www.instagram.com/p/CkE7OuBPWmB/" },
+          { "src" : "5",
+          "alt" : "5편 - 6우산의 세계 작가인터뷰",
+          "linkto" : "https://www.instagram.com/p/CkKmjwoP1Se/" },
+          { "src" : "6",
+          "alt" : "6편 - 켜켜 작가인터뷰",
+          "linkto" : "https://www.instagram.com/p/CkXEj98vow9/" },
+          { "src" : "7",
+          "alt" : "7편 - 우리학교 창업성공사례",
+          "linkto" : "https://www.instagram.com/p/CkXg4Inv6xD/" },
+          { "src" : "8",
+          "alt" : "8편 - 특강 후기",
+          "linkto" : "https://www.instagram.com/p/CkzXAHtPl4r/" },
+          { "src" : "9",
+          "alt" : "9편 - hufsability 사용법",
+          "linkto" : "https://www.instagram.com/p/ClDM0ikvDnJ/" },
+          { "src" : "10",
+          "alt" : "10편 - 이문일공칠 리뉴얼",
+          "linkto" : "https://www.instagram.com/p/CmVR4CAPBpJ/" },
+          { "src" : "10-1",
+          "alt" : "4컷만화",
+          "linkto" : "https://www.instagram.com/p/CmVSzIAPVz3/" },
+          { "src" : "11",
+          "alt" : "11편 - 활동후기",
+          "linkto" : "https://www.instagram.com/p/Cmfj5rBvDhC/" },
+          { "src" : "12",
+          "alt" : "12편 - 취창업 유형테스트",
+          "linkto" : "https://www.instagram.com/p/Cmfz5vbPgpO/" },
+          { "src" : "13",
+          "alt" : "13편 - 해단식",
+          "linkto" : "https://www.instagram.com/p/Cm54hpxP-2s/" }
+      ]
+    }
+  }
+}
