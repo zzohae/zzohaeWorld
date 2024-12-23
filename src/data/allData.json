@@ -82,7 +82,7 @@
   "webWorks" : [
     {
       "prjName" : "청량마켓몰 리뉴얼 프로젝트",
-      "mockup" : "",
+      "mockup" : "cheonglyang",
       "linkto" : "https://cheonglyang-react.vercel.app/",
       "about" : {
         "team": "3인 팀 작업",
@@ -145,7 +145,7 @@
         "date": "2024.12.17 - 진행중"
       },
       "contribution" : {
-        "main": "개인 작업",
+        "main": "100%",
         "sub": ""
       },
       "environment" : "Node.js, React, Bootstrap",

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ProfileMain from '../sub_profile/ProfileMain'
+import WebWorks from '../sub_webworks/WebWorks'
 import './home.scss'
 import { ReactComponent as Logo } from '../../assets/common/logo.svg'
 import { ReactComponent as RCh } from '../../assets/common/chevron_right.svg'
@@ -30,7 +31,7 @@ export default function Home() {
         </div>
       </div>
       <ProfileMain page='main'></ProfileMain>
-      <div>web</div>
+      <WebWorks page='main'></WebWorks>
       <div>design</div>
       <div>contact</div>
     </div>
