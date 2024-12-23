@@ -1,0 +1,94 @@
+.webCont {
+  gap: 60px;
+}
+.workItem {
+  gap: 30px;
+  img {
+    width: 65vw;
+    align-self: center;
+  }
+  h4 a {
+    color: var(--text-default, #333);
+    font-size: var(--fs-20, 1.25rem);
+    font-weight: 700;
+    line-height: normal;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--sub1, #F24E07);
+    }
+  }
+  .midCont {
+    gap: 20px;
+    .smallCont {
+      display: flex;
+      gap: 30px;
+      dt {
+        width: 51px;
+        text-align: justify;
+        color: var(--text-minor-1, #888);
+        font-size: var(--fs-12, 0.75rem);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5;
+        flex-shrink: 0;
+        &:after{
+          content: "";
+          display: inline-block;
+          width: 100%;
+          flex-shrink: 0;
+        }
+      }
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        dd {
+          color: var(--text-default, #333);
+          font-size: var(--fs-18, 1.125rem);
+          font-weight: 500;
+          line-height: 1.2;
+          &.envi {
+            text-align: unset;
+          }
+          p {
+            color: var(--text-minor-1, #888);
+            font-size: var(--fs-12, 0.75rem);
+            font-weight: 300;
+            line-height: 1.2;
+          }
+        }
+      }
+      &.features {
+        p {
+          font-weight: 400;
+          text-align: justify;
+          word-break: keep-all;
+        }
+      }
+    }
+  }
+}
+.swiper {
+  position: relative;
+}
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 28vw;
+}
+.swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/common/chevron_left_point.svg);
+}
+.swiper-button-next:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/common/chevron_right_point.svg);
+}

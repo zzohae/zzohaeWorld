@@ -1,16 +1,16 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
-export default function Myswiper({ children, datakey, viewslides, pagination, autoplay, spacebtw = 0, nav = false }) {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-  
+export default function Myswiper({ children, datakey, viewslides, pagination, autoplay, nav, spacebtw = 0 }) {
+
   return (
     <Swiper
+      modules={[Pagination, Navigation]}
       spaceBetween={spacebtw}
       slidesPerView={viewslides}
-      navigation={nav ? { prevEl: prevRef.current, nextEl: nextRef.current } : false}
+      navigation={nav}
       loop={true}
       draggable={true}
       autoplay={autoplay}

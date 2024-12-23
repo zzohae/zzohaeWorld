@@ -1,12 +1,15 @@
 .profileMainCont {
-  width: 100vw;
   gap: 60px;
 }
 .profileAll {
+  display: flex;
+  flex-direction: column;
   .profileImg {
     aspect-ratio: 3/4;
-    max-width: 315px;
+    width: 100%;
+    max-width: 400px;
     background-color: #eee;
+    align-self: center;
     p {
       height: 100%;
       padding: 0 0 20px 20px;
@@ -59,6 +62,9 @@
         &.academy {
           margin-top: 0;
         }
+      }
+      &:last-child .ability {
+        border-bottom: none;
       }
       .ability {
         gap: 5px;
