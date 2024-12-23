@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <ProfileMain></ProfileMain>
+      <ProfileMain page='main'></ProfileMain>
       <div>web</div>
       <div>design</div>
       <div>contact</div>

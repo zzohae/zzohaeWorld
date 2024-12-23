@@ -14,5 +14,80 @@
   }
   .profileInfo {
     margin-top: 30px;
+    .myName {
+      color: var(--text-default, #333);
+      font-size: var(--fs-24, 1.5rem);
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 20px;
+      span {
+        color: var(--text-minor-1, #888);
+        font-size: var(--fs-18, 1.125rem);
+        font-weight: 300;
+      }
+    }
+    dl {
+      gap: 20px;
+      .smallCont {
+        display: flex;
+        gap: 30px;
+        & > div {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+    dd {
+      color: var(--text-default, #333);
+      font-weight: 500;
+      line-height: 1.2;
+      &.training {
+        word-break: break-all;
+      }
+      .award {
+        display: block;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+      p {
+        color: var(--text-minor-1, #888);
+        font-size: var(--fs-12, 0.75rem);
+        font-weight: 300;
+        line-height: 1.2;
+        margin-top: .25rem;
+        &.academy {
+          margin-top: 0;
+        }
+      }
+      .ability {
+        gap: 5px;
+        padding: 0 10px 8px 10px;
+        border-bottom: 1px solid var(--text-minor-4, #ECECEC);
+        span {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background: url(../../../public/ability.png) no-repeat;
+          &.html5 { background-position: 0 0; }
+          &.css3 { background-position: -24px 0; }
+          &.javascript { background-position: -48px 0; }
+          &.sass { background-position: -72px 0; }
+          &.react { background-position: -96px 0; }
+          &.bootstrap { background-position: -120px 0; }
+          &.nodejs { background-position: -144px 0; }
+          &.php { background-position: -168px 0; }
+          &.myphpadmin { background-position: -192px 0; }
+          &.supabase { background-position: -216px 0; }
+          &.confluence { background-position: -240px 0; }
+          &.slack { background-position: -264px 0; }
+          &.github { background-position: -288px 0; }
+          &.figma { background-position: -312px 0; }
+          &.illustrator { background-position: -336px 0; }
+          &.photoshop { background-position: -360px 0; }
+          &.blender { background-position: -384px 0; }
+        }
+      }
+    }
   }
 }
