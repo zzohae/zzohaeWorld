@@ -1,13 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
-export default function Myswiper({ children, datakey, viewslides, pagination, autoplay, nav, spacebtw = 0 }) {
+export default function Myswiper({ children, datakey, viewslides, pagination, autoplay, nav, slidesCenter=false, spacebtw = 0 }) {
 
   return (
     <Swiper
-      modules={[Pagination, Navigation]}
+      modules={[Pagination, Navigation, Autoplay]}
       spaceBetween={spacebtw}
       slidesPerView={viewslides}
       navigation={nav}
@@ -15,6 +15,7 @@ export default function Myswiper({ children, datakey, viewslides, pagination, au
       draggable={true}
       autoplay={autoplay}
       pagination={pagination}
+      centeredSlides={slidesCenter}
     >
       {datakey.map((item, index) => (
         <SwiperSlide key={index}>
