@@ -59,14 +59,16 @@
   gap: 60px;
   &>div {
     gap: 20px;
-    div h6 {
-      gap: 8px;
+    div {
+      h6 {
+        gap: 8px;
+      }
       p {
-          color: var(--text-minor-1, #888);
-          font-size: var(--fs-14, 0.875rem);
-          font-weight: 300;
-          line-height: normal;
-        }
+        color: var(--text-minor-1, #888);
+        font-size: var(--fs-14, 0.875rem);
+        font-weight: 300;
+        line-height: normal;
+      }
     }
   }
   form {
@@ -125,9 +127,9 @@
       }
     }
     .submit {
-      padding: 8px 10px;
+      padding: 12px 16px;
       width: 100%;
-      max-width: 400px;
+      max-width: 490px;
       border: none;
       border-radius: var(--bs-3, 0.1875rem);
       background: var(--text-minor-4, #ECECEC);

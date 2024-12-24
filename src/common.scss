@@ -76,12 +76,14 @@
 // Header (Hd.js)
 header {
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
   background-color: var(--white-alter, #FEFEFE);
   transition: transform 0.3s ease;
+  border-bottom: 0.5px solid var(--text-minor-4, #ECECEC);
   &.show {
     opacity: 1;
     transform: translateY(0);
@@ -124,16 +126,6 @@ footer {
     strong {
       font-weight: 600;
     }
-  }
-}
-
-// 제목 컴포넌트 (Title.js)
-.allTitle {
-  button {
-    width: 45px;
-    height: 45px;
-    border-radius: var(--br-full, 100px);
-    background-color: var(--point, #FFBB00);
   }
 }
 
