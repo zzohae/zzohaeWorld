@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ProfileMain from '../sub_profile/ProfileMain'
 import WebWorks from '../sub_webworks/WebWorks'
+import DesignWorks from '../sub_designworks/DesignWorks'
 import Contact from './Contact'
 import './home.scss'
 import { ReactComponent as Logo } from '../../assets/common/logo.svg'
@@ -33,7 +34,7 @@ export default function Home() {
       </div>
       <ProfileMain page='main'></ProfileMain>
       <WebWorks page='main'></WebWorks>
-      <div>design</div>
+      <DesignWorks page='main'></DesignWorks>
       <Contact></Contact>
     </div>
   )
