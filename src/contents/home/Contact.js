@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Title from "../../components/Title";
 import { ReactComponent as MailIcon } from '../../assets/mail.svg'
 
-export default function Contact() {
+export default function Contact({ id, className }) {
 	
 	const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,7 +12,7 @@ export default function Contact() {
 
 	useEffect(() => {
     const allFilled = name.trim() && email.trim() && phone.trim() && message.trim();
-    setIsButtonActive(allFilled); // 모든 필드가 채워졌으면 버튼 활성화
+    setIsButtonActive(allFilled);
   }, [name, email, phone, message]);
 
   const handleSubmit = async (e) => {
@@ -44,14 +44,14 @@ export default function Contact() {
   };
 
 	return (
-		<div className="contactCont container d-flex flex-column">
+		<div id={id} className={`contactCont container mycontainer d-flex flex-column ${className}`}>
 			<Title page='main' noBtn={true}>Contact</Title>
 			<div className="d-flex flex-column">
-				<div>
+				<div className="align-self-md-end col-md-8 col-lg-6">
 					<h6 className="fcs fs-18"><MailIcon />badahaeyeoncho@gmail.com</h6>
 					<p>메일은 2~3일에 한 번 확인합니다.</p>
 				</div>
-				<form onSubmit={handleSubmit} className="d-flex flex-column">
+				<form onSubmit={handleSubmit} className="d-flex flex-column align-self-md-end col-md-8 col-lg-6">
 					<div className="smallCont">
 						<label htmlFor="name">이 름</label>
 						<input

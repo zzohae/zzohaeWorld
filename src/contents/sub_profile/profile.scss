@@ -2,17 +2,21 @@
   gap: 60px;
 }
 .profileAll {
-  display: flex;
-  flex-direction: column;
   .profileImg {
-    aspect-ratio: 3/4;
+    aspect-ratio: 1;
     width: 100%;
-    max-width: 400px;
     background-color: #eee;
     align-self: center;
+    @media (min-width: 767px) {
+      width: 80%;
+      max-width: 600px;
+    }
     p {
       height: 100%;
       padding: 0 0 20px 20px;
+      color: var(--text-default, #333);
+      font-size: var(--fs-18, 1.125rem);
+      font-weight: 400;
     }
   }
   .profileInfo {
@@ -70,6 +74,7 @@
         gap: 5px;
         padding: 0 10px 8px 10px;
         border-bottom: 1px solid var(--text-minor-4, #ECECEC);
+        flex-wrap: wrap;
         span {
           display: inline-block;
           width: 24px;

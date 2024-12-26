@@ -4,9 +4,9 @@ import Myswiper from '../../components/Myswiper';
 import Title from '../../components/Title';
 import './designworks.scss';
 
-export default function DesignWorks({ page = '' }) {
+export default function DesignWorks({ id, className, page = '' }) {
   const designWorks = allData.designWorks;
-  const [activeTab, setActiveTab] = useState('poster');
+  const [activeTab, setActiveTab] = useState('all');
   const [slidesPerView, setSlidesPerView] = useState(1.5);
 
   const handleTabClick = (tab) => {
@@ -44,9 +44,17 @@ export default function DesignWorks({ page = '' }) {
   }
 
   return (
-    <div className="container designCont">
-      <Title page={page}>My_design_<br />works.pdf</Title>
+    <div id={id} className={`container mycontainer designCont d-flex flex-column ${className}`}>
+      <Title page={page} linkto='design_portfolio'>My_design_<br />works.pdf</Title>
+      <div>
       <ul className="nav" role="tablist">
+        <li className="navItem" role="presentation">
+          <a
+            className={`${activeTab === 'all' ? 'active' : ''}`}
+            onClick={() => handleTabClick('all')}>
+            전체
+          </a>
+        </li>
         <li className="navItem" role="presentation">
           <a
             className={`${activeTab === 'poster' ? 'active' : ''}`}
@@ -79,7 +87,7 @@ export default function DesignWorks({ page = '' }) {
 
       <div className="tab-content">
         {/* 포스터 탭 내용 */}
-        <div className={`tab-pane fade ${activeTab === 'poster' ? 'show active' : ''}`}>
+        <div className={`tab-pane fade mb-4 ${activeTab === 'poster' || activeTab === 'all' ? 'show active' : ''}`}>
           <Myswiper
             datakey={designWorks.poster}
             viewslides={slidesPerView}
@@ -105,7 +113,7 @@ export default function DesignWorks({ page = '' }) {
         </div>
 
         {/* 카드뉴스 탭 내용 */}
-        <div className={`tab-pane fade ${activeTab === 'cardNews' ? 'show active' : ''}`}>
+        <div className={`tab-pane fade mb-4 ${activeTab === 'cardNews' || activeTab === 'all' ? 'show active' : ''}`}>
           <div className="row g-4">
             {designWorks.cardNews.map((work, index) => (
               <div className="col-6 col-md-4 col-lg-3" key={index}>
@@ -123,7 +131,7 @@ export default function DesignWorks({ page = '' }) {
         </div>
 
         {/* 로고 탭 내용 */}
-        <div className={`tab-pane fade ${activeTab === 'logo' ? 'show active' : ''}`}>
+        <div className={`tab-pane fade mb-4 ${activeTab === 'logo' || activeTab === 'all' ? 'show active' : ''}`}>
           <div className="row g-4">
             {designWorks.logo.map((work, index) => (
               <div className="col-6 col-md-4 col-lg-3" key={index}>
@@ -141,7 +149,7 @@ export default function DesignWorks({ page = '' }) {
         </div>
 
         {/* 배너 탭 내용 */}
-        <div className={`tab-pane fade ${activeTab === 'banner' ? 'show active' : ''}`}>
+        <div className={`tab-pane fade ${activeTab === 'banner' || activeTab === 'all' ? 'show active' : ''}`}>
           <div className="row g-4">
             {designWorks.banner.map((work, index) => (
               <div className="col-md-6" key={index}>
@@ -157,6 +165,7 @@ export default function DesignWorks({ page = '' }) {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

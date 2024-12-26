@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { MyLink } from '../ui/commonUI'
+import { ReactComponent as RCh } from '../assets/common/chevron_right.svg'
 
 export default function Ft() {
   return (
@@ -8,10 +10,10 @@ export default function Ft() {
         <div className='ftInfo fcs'>
           <Link to='/' className='fcs rubik-spray fc-sub ftLogo'>zzohae</Link>
           <div className='flex-wrap fcs ftLink'>
-            <Link className='fcs'>프로필+</Link>
-            <Link className='fcs'>웹 포트폴리오+</Link>
-            <Link className='fcs'>디자인 포트폴리오+</Link>
-            <Link className='fcs'>GitHub+</Link>
+            <MyLink to='profile'>프로필<RCh width='12px' height='12px' /></MyLink>
+            <MyLink to='web_portfolio'>웹 포트폴리오<RCh width='12px' height='12px' /></MyLink>
+            <MyLink to='design_portfolio'>디자인 포트폴리오<RCh width='12px' height='12px' /></MyLink>
+            <a href='https://github.com/zzohae' target='_blank' rel="noopener noreferrer" className='alink'>GitHub<RCh width='12px' height='12px' /></a>
           </div>
         </div>
         <div className='copy'>

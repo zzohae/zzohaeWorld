@@ -3,7 +3,7 @@ import allData from '../../data/allData.json'
 import Title from '../../components/Title';
 import './profile.scss'
 
-export default function ProfileMain({ page = '' }) {
+export default function ProfileMain({ id, className, page = '' }) {
   const { edu, awards, training, ability } = allData.profileData;
 
   const formatText = (text) => {
@@ -29,10 +29,10 @@ export default function ProfileMain({ page = '' }) {
   };
 
   return (
-    <div className='profileMainCont container d-flex flex-column'>
-      <Title page={page}>zzohae/<br />readme.md</Title>
-      <div className='profileAll'>
-        <div className='profileImg'>
+    <div id={id} className={`profileMainCont container mycontainer d-flex flex-column ${className}`}>
+      <Title page={page} linkto='profile'>zzohae/<br />readme.md</Title>
+      <div className='profileAll d-flex flex-column flex-lg-row'>
+        <div className='profileImg me-lg-5'>
           <p className='d-flex align-items-end'>
             유연성 있는 올라운더 퍼블리셔,<br />
             나아가 웹기획자를 꿈꾸는<br />

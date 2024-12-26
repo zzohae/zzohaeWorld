@@ -20,6 +20,7 @@
   }
 }
 .designCont {
+  gap: 60px;
   img {
     border-radius: var(--br-3, 0.1875rem);
   }
@@ -29,5 +30,21 @@
     font-size: var(--fs-12, 0.75rem);
     font-weight: 300;
     line-height: 1.2;
+  }
+  .swiper {
+    .swiper-slide img {
+      border: 0.6px solid var(--white-alter, #FEFEFE);
+      transition: box-shadow 0.3s ease;
+    }
+    .swiper-slide:not(.swiper-slide-active) {
+      filter: blur(3px);
+      opacity: 0.3;
+    }
+    .swiper-slide-active img {
+      box-shadow: 0 2px 5px rgba($color: #333, $alpha: 0.25);
+    }
+  }
+  .design-item img {
+    width: 100%;
   }
 }

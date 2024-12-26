@@ -15,6 +15,10 @@
   font-style: normal;
 }
 
+.mycontainer {
+  padding-top: 60px;
+}
+
 .fc-main {
   color: var(--main1, #002F87);
 }
@@ -98,7 +102,7 @@ header {
 // Footer (Ft.js)
 footer {
   margin-top: 80px;
-  padding: 30px 0;
+  padding: 50px 0;
   > .container {
     gap: 20px;
   }
@@ -110,11 +114,20 @@ footer {
     }
     .ftLink {
       gap: 8px;
-      a {
+      .alink {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         color: var(--white-alter, #FEFEFE);
         font-size: var(--fs-12, .75rem);
         font-weight: 600;
         line-height: normal;
+        &:hover {
+          color: var(--point, #FFBB00);
+          svg path {
+            color: var(--point, #FFBB00);
+          }
+        }
       }
     }
   }
@@ -132,4 +145,12 @@ footer {
 // Swiper (Myswiper.js)
 .swiper {
   width: 100%;
+}
+
+// 퀵메뉴 (Quick.js)
+.quickmenu {
+  position: fixed;
+  z-index: 999;
+  bottom: 60px;
+  right: 8vw;
 }

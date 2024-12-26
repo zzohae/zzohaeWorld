@@ -1,5 +1,5 @@
 .homeCont {
-  gap: 80px;
+  gap: 20px;
 }
 
 .c01main {
@@ -34,29 +34,12 @@
     }
     ul {
       gap: 12px;
-      li {
-        a {
-          font-size: var(--fs-18, 1.125rem);
-          font-weight: 600;
-          color: var(--text-minor-1, #888);
-          height: 20px;
-          gap: 8px;
-          svg {
-            width: 20px;
-            height: 20px;
-            color: inherit;
-          }
-        }
-        &:hover a {
-          color: var(--sub1, #F24E07);
-        }
-      }
     }
   }
 }
 
 .contactCont {
-  gap: 60px;
+  gap: 40px;
   &>div {
     gap: 20px;
     div {
@@ -96,10 +79,12 @@
         margin-left: 30px;
         padding: 8px 10px;
         width: 100%;
-        max-width: 400px;
         border: none;
         border-radius: var(--br-3, 0.1875rem);
         background: var(--text-minor-4, #ECECEC);
+        &:focus, &:focus-visible {
+          outline: 0.6px solid var(--main1, #002F87);
+        }
         &:placeholder, &:placeholder-shown, &:-moz-placeholder {
           color: var(--text-minor-1, #888);
           font-size: var(--fs-14, 0.875rem);
@@ -113,10 +98,12 @@
         padding: 8px 10px;
         min-height: 6rem;
         width: 100%;
-        max-width: 400px;
         border: none;
         border-radius: var(--br-3, 0.1875rem);
         background: var(--text-minor-4, #ECECEC);
+        &:focus, &:focus-visible {
+          outline: 0.6px solid var(--main1, #002F87);
+        }
         &:placeholder {
           color: var(--text-minor-1, #888);
           font-size: var(--fs-14, 0.875rem);
@@ -129,7 +116,6 @@
     .submit {
       padding: 12px 16px;
       width: 100%;
-      max-width: 490px;
       border: none;
       border-radius: var(--bs-3, 0.1875rem);
       background: var(--text-minor-4, #ECECEC);

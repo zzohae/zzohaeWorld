@@ -5,12 +5,12 @@ import allData from '../../data/allData.json';
 import Myswiper from '../../components/Myswiper';
 import './webworks.scss';
 
-export default function WebWorks({ page = '' }) {
+export default function WebWorks({ id, className, page = '' }) {
   const webWorks = allData.webWorks;
 
   return (
-    <div className='webCont container d-flex flex-column'>
-      <Title page={page}>my_web_<br />prjcts.json</Title>
+    <div id={id} className={`webCont container mycontainer d-flex flex-column ${className}`}>
+      <Title page={page} linkto='web_portfolio'>my_web_<br />prjcts.json</Title>
       <Myswiper
       datakey={webWorks}
       viewslides={1}
@@ -20,9 +20,10 @@ export default function WebWorks({ page = '' }) {
       spacebtw={10}
       >
         {(webWork, index)=>(
-        <dl key={index} className='workItem d-flex flex-column'>
+        <dl key={index} className='workItem d-flex flex-column flex-lg-row-reverse justify-content-lg-center'>
           <img src={`/webWorks/${webWork.mockup}.png`}></img>
-          <h4><Link to={webWork.linkto} target="_blank" rel="noopener noreferrer">{webWork.prjName}</Link></h4>
+          <div className='col-lg-4'>
+          <h4 className='mb-4'><Link to={webWork.linkto} target="_blank" rel="noopener noreferrer">{webWork.prjName}</Link></h4>
           <div className='midCont d-flex flex-column'>
             <div className='smallCont'>
               <dt>개 요</dt>
@@ -54,6 +55,7 @@ export default function WebWorks({ page = '' }) {
                 ))}
               </div>
             </div>
+          </div>
           </div>
         </dl>
         )}

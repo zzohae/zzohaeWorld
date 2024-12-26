@@ -1,14 +1,21 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import ProfileMain from '../sub_profile/ProfileMain'
 import WebWorks from '../sub_webworks/WebWorks'
 import DesignWorks from '../sub_designworks/DesignWorks'
 import Contact from './Contact'
 import './home.scss'
+import { MyLink } from '../../ui/commonUI'
 import { ReactComponent as Logo } from '../../assets/common/logo.svg'
 import { ReactComponent as RCh } from '../../assets/common/chevron_right.svg'
 
 export default function Home() {
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='homeCont flex-column fcs'>
       <div className='c01main fcc'>
@@ -25,17 +32,38 @@ export default function Home() {
               </div>
             </div>
             <ul className='d-flex flex-column'>
-              <li><Link className='fcs'><RCh />Profile</Link></li>
-              <li><Link className='fcs'><RCh />Portfolio</Link></li>
-              <li><Link className='fcs'><RCh />Contact</Link></li>
+              <li><MyLink
+                to='#profile'
+                page='main'
+                onClick={() => handleScrollToSection('profile')}>
+                Profile<RCh width='20px' height='20px' />
+              </MyLink></li>
+              <li><MyLink
+                to='#webworks'
+                page='main'
+                onClick={() => handleScrollToSection('webworks')}>
+                Web Portfolio<RCh width='20px' height='20px' />
+              </MyLink></li>
+              <li><MyLink
+                to='#designworks'
+                page='main'
+                onClick={() => handleScrollToSection('designworks')}>
+                Design Portfolio<RCh width='20px' height='20px' />
+              </MyLink></li>
+              <li><MyLink
+                to='#contact'
+                page='main'
+                onClick={() => handleScrollToSection('contact')}>
+                Contact<RCh width='20px' height='20px' />
+              </MyLink></li>
             </ul>
           </div>
         </div>
       </div>
-      <ProfileMain page='main'></ProfileMain>
-      <WebWorks page='main'></WebWorks>
-      <DesignWorks page='main'></DesignWorks>
-      <Contact></Contact>
+      <ProfileMain page='main' id='profile' className='section'></ProfileMain>
+      <WebWorks page='main' id='webworks' className='section'></WebWorks>
+      <DesignWorks page='main' id='designworks' className='section'></DesignWorks>
+      <Contact id='contact' className='section'></Contact>
     </div>
   )
 }
