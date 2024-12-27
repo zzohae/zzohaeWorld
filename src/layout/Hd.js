@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { ReactComponent as Logo } from '../assets/common/logo.svg'
 import { ReactComponent as MenuLine } from '../assets/common/menuline.svg'
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Hd() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,25 +29,15 @@ export default function Hd() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
-    if (location.pathname === '/') {
-      const hash = location.hash;
-      if (hash) {
-        const targetElement = document.querySelector(hash);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    }
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY, location.pathname, location.hash]);
+  }, [lastScrollY, location.pathname]);
 
   return (
     <header className={`w-100 overflow-hidden ${!isVisible ? 'hide' : isScrolledUp ? 'show' : 'hide'}`}>
       <div className='fcb container h-100'>
-        <Logo color='#002F87' width='85px' height='69px'></Logo>
+        <Link to='/'><Logo color='#002F87' width='85px' height='69px'></Logo></Link>
         <button><MenuLine /></button>
       </div>
     </header>
