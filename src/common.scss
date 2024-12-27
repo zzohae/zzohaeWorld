@@ -151,17 +151,17 @@ footer {
 .quickmenu {
   position: fixed;
   z-index: 999;
-  bottom: 50px;
+  bottom: 30px;
   right: 4vw;
   padding: .5rem;
   background-color: rgba($color: #FEFEFE, $alpha: 0.3);
   border-radius: var(--br-full, 100px);
   svg {
-    width: 60px;
-    height: 60px;
+    width: 54px;
+    height: 54px;
     @media (min-width: 767px){
-      width: 80px;
-      height: 80px;
+      width: 75px;
+      height: 75px;
     }
     @media (min-width: 1919px){
       width: 100px;

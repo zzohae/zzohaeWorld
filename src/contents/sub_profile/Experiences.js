@@ -34,7 +34,7 @@ export default function Experiences() {
           <p className='date'>{formatText(ex.date)}</p>
           <div className='expContent'>
             <p>{formatText(ex.content)}</p>
-            <p>{formatText(ex.description)}</p>
+            <p className='d-flex'>{formatText(ex.description)}</p>
           </div>
         </li>
         ))}
