@@ -34,7 +34,7 @@ export default function ProfileMain({ id, className, page = '' }) {
     <div id={id} className={`profileMainCont container mycontainer d-flex flex-column ${className}`}>
       <Title page={page} linkto='profile'>zzohae/<br />readme.md</Title>
       <div className='profileAll d-flex flex-column flex-lg-row'>
-        <div className='profileImg me-lg-5'>
+        <div className='profileImg me-lg-5' style={{ aspectRatio: page === 'main' ? '1' : '3/4' }}>
           <p className='d-flex align-items-end'>
             유연성 있는 올라운더 퍼블리셔,<br />
             나아가 웹기획자를 꿈꾸는<br />
