@@ -1,6 +1,8 @@
 import React from 'react'
 import allData from '../../data/allData.json'
 import Title from '../../components/Title';
+import Experiences from './Experiences';
+import Likes from './Likes';
 import './profile.scss'
 
 export default function ProfileMain({ id, className, page = '' }) {
@@ -89,6 +91,12 @@ export default function ProfileMain({ id, className, page = '' }) {
           </dl>
         </div>
       </div>
+      {page !== "main" && (
+        <>
+        <Experiences></Experiences>
+        <Likes></Likes>
+        </>
+      )}
     </div>
   )
 }

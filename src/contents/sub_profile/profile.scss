@@ -102,3 +102,36 @@
     }
   }
 }
+.expCont {
+  gap: 60px;
+  .expItem {
+    gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--text-minor-4, #ECECEC);
+    .date {
+      color: var(--text-minor-1, #888);
+      font-size: var(--fs-12, 0.75rem);
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    .expContent {
+      p:first-child{
+        color: var(--text-default, #333);
+        font-size: var(--fs-14, 0.875rem);
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      p:last-child {
+        color: var(--text-minor-1, #888);
+        font-size: var(--fs-12, 0.75rem);
+        font-weight: 300;
+        line-height: 1.2;
+        margin-top: 5px;
+      }
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
