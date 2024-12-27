@@ -5,7 +5,7 @@ import Experiences from './Experiences';
 import Likes from './Likes';
 import './profile.scss'
 
-export default function ProfileMain({ id, className, page = '' }) {
+export default function ProfileMain({ id, className='', page = '' }) {
   const { edu, awards, training, ability } = allData.profileData;
 
   const formatText = (text) => {
