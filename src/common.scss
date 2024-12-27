@@ -16,7 +16,7 @@
 }
 
 .mycontainer {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .fc-main {
@@ -151,6 +151,21 @@ footer {
 .quickmenu {
   position: fixed;
   z-index: 999;
-  bottom: 60px;
-  right: 8vw;
+  bottom: 50px;
+  right: 4vw;
+  padding: .5rem;
+  background-color: rgba($color: #FEFEFE, $alpha: 0.3);
+  border-radius: var(--br-full, 100px);
+  svg {
+    width: 60px;
+    height: 60px;
+    @media (min-width: 767px){
+      width: 80px;
+      height: 80px;
+    }
+    @media (min-width: 1199px){
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
