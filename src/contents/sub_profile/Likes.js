@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../../components/Title'
-import Myswiper from '../../components/Myswiper'
+import MyswiperFade from '../../components/MyswiperFade'
 import allData from '../../data/allData.json';
 
 export default function Likes() {
@@ -22,7 +22,7 @@ export default function Likes() {
             <p>커피</p>
           </div>
         </div>
-        <Myswiper
+        <MyswiperFade
             datakey={allData.myphotos}
             viewslides={1}
             nav={false}
@@ -40,7 +40,7 @@ export default function Likes() {
               </div>
             )}
             
-        </Myswiper>
+        </MyswiperFade>
       </div>
     </div>
   )
