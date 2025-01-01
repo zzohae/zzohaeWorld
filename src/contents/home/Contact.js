@@ -17,18 +17,18 @@ export default function Contact({ id, className }) {
     setIsButtonActive(allFilled);
   }, [name, email, phone, message]);
 
-	// 유효성 검사사
+	// 유효성 검사
 	const validateForm = () => {
     let formErrors = {};
     
     // 이름: 한글 초성만 입력 불가
-    const namePattern = /^[가-힣]{2,}$/;
+    const namePattern = /^[가-힣a-zA-Z]{2,}$/;
     if (!namePattern.test(name)) {
       formErrors.name = "이름은 초성 없이 2글자 이상 입력해야 합니다.";
     }
 
     // 전화번호: 숫자만 11글자
-    const phonePattern = /^[0-9]{11}$/;
+    const phonePattern = /^[0-9]{9,11}$/;
     if (!phonePattern.test(phone)) {
       formErrors.phone = "전화번호는 하이픈(-) 없이 숫자만 입력해주세요.";
     }
@@ -69,6 +69,10 @@ export default function Contact({ id, className }) {
       }
 
       alert("문의가 성공적으로 접수되었습니다. 확인 후 연락 드리겠습니다.");
+			setName("");
+			setEmail("");
+			setPhone("");
+			setMessage("");
     } catch (error) {
       alert("폼 제출 중 오류가 발생하였습니다. 다시 시도해 주세요.");
     } finally {

@@ -6,7 +6,7 @@ import { ReactComponent as RCh } from '../assets/common/chevron_right.svg'
 
 export default function Ft() {
   return (
-    <footer className='bg-main w-100'>
+    <footer className='w-100'>
       <div className='d-flex flex-column container'>
         <div className='ftInfo fcs'>
           <Link to='/' className='fcs flex-column rubik-spray fc-sub ftLogo'><Logo width='65px' height='52px' className='d-none d-lg-block' />zzohae</Link>

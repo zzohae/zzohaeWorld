@@ -21,6 +21,9 @@ export const MoreBtn = styled(Link).withConfig({
   background-repeat: no-repeat;
   background-size: 54%;
   flex-shrink: 0;
+  [color-theme="dark"] & {
+    background-color: var(--main3, #002F87);
+  }
   &:hover {
     background-color: var(--main1, #002F87);
   }
@@ -51,6 +54,10 @@ export const MoreBtnA = styled.a`
   background-repeat: no-repeat;
   transition: color 0.3s, background-color 0.3s;
   flex-shrink: 0;
+  [color-theme="dark"] & {
+    background-color: var(--main3, #002F87);
+    color: var(--text-default, #FEFEFE);
+  }
   &:hover {
     background-color: var(--main1, #002F87);
   }
@@ -64,6 +71,9 @@ export const MyLink = styled(Link)`
   font-size: var(--fs-14, .875rem);
   font-weight: 600;
   line-height: normal;
+  [color-theme="dark"] & {
+    color: var(--text-default, #FEFEFE);
+  }
   &:hover {
     color: var(--point, #FFBB00);
     svg path {

@@ -37,3 +37,19 @@
   --br-10: 0.625rem;
   --br-full: 100px;
 }
+:root[color-theme='dark'] {
+  /* Color */
+  --main1: #ca3d00;
+  --main2: #1A74DC;
+  --main3: #002F87;
+  --sub1: #FFBB00;
+  --sub2: #FF996D;
+  --sub3: #FFD4C1;
+  --point: #FFBB00;
+  --text-default: #D2D2D2;
+  --text-minor-1: #D2D2D2;
+  --text-minor-2: #D2D2D2;
+  --text-minor-3: #AAA;
+  --text-minor-4: #333;
+  --white-alter: #1f1f1f;
+}

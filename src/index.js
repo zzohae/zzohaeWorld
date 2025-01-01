@@ -8,10 +8,14 @@ import './_variables.css'
 import './reset.scss'
 import './common.scss'
 // import reportWebVitals from './reportWebVitals';
+// mode
+import { ThemeProvider } from './ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+  <ThemeProvider>
     <App />
+  </ThemeProvider>
   </BrowserRouter>
 );

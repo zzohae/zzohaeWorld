@@ -3,9 +3,12 @@
   height: 100vh;
   > .container {
     gap: 50px;
+    > svg {
+      color: var(--main1, #002F87);
+    }
     .zzohae {
       padding-bottom: 30px;
-      border-bottom: 1px solid var(--text-minor-3, #D2D2D2);
+      border-bottom: 1px solid var(--text-minor-4, #ECECEC);
       color: var(--main1, #002F87);
       .catch {
         font-size: var(--fs-12, 0.75rem);
@@ -72,6 +75,7 @@
     div {
       h6 {
         gap: 8px;
+        color: var(--text-default, #333);
       }
       p {
         color: var(--text-minor-1, #888);
@@ -115,6 +119,7 @@
         border: none;
         border-radius: var(--br-3, 0.1875rem);
         background: var(--text-minor-4, #ECECEC);
+        color: var(--text-default, #333);
         &:focus, &:focus-visible {
           outline: 0.6px solid var(--main1, #002F87);
         }
@@ -133,6 +138,7 @@
         border: none;
         border-radius: var(--br-3, 0.1875rem);
         background: var(--text-minor-4, #ECECEC);
+        color: var(--text-default, #333);
         &:focus, &:focus-visible {
           outline: 0.6px solid var(--main1, #002F87);
         }

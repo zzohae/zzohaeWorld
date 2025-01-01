@@ -1,4 +1,5 @@
 import React from 'react'
+import ColorThemeToggle from '../../layout/ColorThemeToggle'
 import ProfileMain from '../sub_profile/ProfileMain'
 import WebWorks from '../sub_webworks/WebWorks'
 import DesignWorks from '../sub_designworks/DesignWorks'
@@ -8,7 +9,7 @@ import { MyLink } from '../../ui/commonUI'
 import { ReactComponent as Logo } from '../../assets/common/logo.svg'
 import { ReactComponent as RCh } from '../../assets/common/chevron_right.svg'
 
-export default function Home() {
+export default function Home({ theme, toggleTheme }) {
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -18,9 +19,10 @@ export default function Home() {
 
   return (
     <div className='homeCont flex-column fcs'>
-      <div className='c01main fcc'>
+      <div className='c01main fcc position-relative'>
+      <ColorThemeToggle theme={theme} toggleTheme={toggleTheme} />
         <div className='container flex-column fsc flex-lg-row align-items-lg-center'>
-          <Logo color='#002F87' width='160px' height='128px' />
+          <Logo width='160px' height='128px' />
           <div className='fsc flex-column' style={{gap:'30px'}}>
             <div className='zzohae'>
               <p className='catch'>함께 앞날을 헤엄쳐 나가는<br />
