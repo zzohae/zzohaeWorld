@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { ReactComponent as Logo } from '../assets/common/logo.svg'
 import { ReactComponent as MenuLine } from '../assets/common/menuline.svg'
 import { Link, useLocation } from 'react-router-dom';
@@ -10,6 +10,7 @@ export default function Hd() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const menuRef = useRef(null);
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -32,6 +33,12 @@ export default function Hd() {
     setIsMenuOpen(prevState => !prevState);
   };
 
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -40,11 +47,24 @@ export default function Hd() {
     };
   }, [lastScrollY, location.pathname]);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   return (
-    <header className={`w-100 overflow-hidden ${!isVisible ? 'hide' : isScrolledUp ? 'show' : 'hide'}`}>
-      <div className='fcb container h-100'>
-        <Link to='/'><Logo color='#002F87' width='85px' height='69px'></Logo></Link>
+    <header className={`w-100 ${!isVisible ? 'hide' : isScrolledUp ? 'show' : 'hide'}`}>
+      <div className='fcb container h-100 overflow-hidden' ref={menuRef}>
+        <Link to='/' onClick={() => setIsMenuOpen(false)}><Logo color='#002F87' width='85px' height='69px'></Logo></Link>
         <button onClick={toggleMenu}><MenuLine /></button>
+        <MenuTab setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       </div>
     </header>
   )
