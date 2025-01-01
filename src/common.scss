@@ -115,6 +115,7 @@ footer {
     align-self: stretch;
     .ftLogo {
       padding: 20px 0;
+      font-size: var(--fs-20, 1.25rem);
     }
     .ftLink {
       gap: 8px;
@@ -123,7 +124,7 @@ footer {
         align-items: center;
         justify-content: flex-start;
         color: var(--white-alter, #FEFEFE);
-        font-size: var(--fs-12, .75rem);
+        font-size: var(--fs-14, .875rem);
         font-weight: 600;
         line-height: normal;
         &:hover {
@@ -137,7 +138,7 @@ footer {
   }
   .copy {
     color: var(--white-alter, #FEFEFE);
-    font-size: var(--fs-8, .5rem);
+    font-size: var(--fs-12, .75rem);
     font-weight: 300;
     line-height: normal;
     strong {
@@ -167,10 +168,6 @@ footer {
       width: 75px;
       height: 75px;
     }
-    @media (min-width: 1919px){
-      width: 100px;
-      height: 100px;
-    }
   }
 }
 
@@ -184,7 +181,7 @@ footer {
   top: 60px;
   transition: height 0.3s ease;
   &.open {
-    height: 256px;
+    height: 200px;
   }
   .container {
     padding-top: 2rem;
@@ -195,7 +192,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     a {
-      font-size: var(--fs-32, 2rem);
+      font-size: var(--fs-24, 1.5rem);
       font-weight: 200;
       color: var(--white-alter, #FEFEFE);
       text-align: right;

@@ -40,7 +40,7 @@ export const MyLink = styled(Link)`
   align-items: center;
   justify-content: flex-start;
   color: var(--white-alter, #FEFEFE);
-  font-size: var(--fs-12, .75rem);
+  font-size: var(--fs-14, .875rem);
   font-weight: 600;
   line-height: normal;
   &:hover {

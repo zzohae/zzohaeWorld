@@ -70,9 +70,15 @@
           flex-shrink: 0;
         }
       }
+      .inputwrap {
+        padding-left: 30px;
+        .error {
+          display: block;
+          color: var(--sub1, #F24E07);
+        }
+      }
       input {
         height: 34px;
-        margin-left: 30px;
         padding: 8px 10px;
         width: 100%;
         border: none;
@@ -90,7 +96,6 @@
         }
       }
       textarea {
-        margin-left: 30px;
         padding: 8px 10px;
         min-height: 6rem;
         width: 100%;
@@ -123,6 +128,17 @@
       &.active {
         background-color: var(--main1, #002F87);
       }
+    }
+    .loading {
+      padding: 12px 16px;
+      width: 100%;
+      border-radius: var(--bs-3, 0.1875rem);
+      background: var(--sub1, #ECECEC);
+      color: var(--white-alter, #FEFEFE);
+      font-size: var(--fs-18, 1.125rem);
+      font-weight: 500;
+      line-height: normal;
+      text-align: center;
     }
   }
 }

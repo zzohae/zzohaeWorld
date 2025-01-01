@@ -63,7 +63,7 @@ export default function Hd() {
     <header className={`w-100 ${!isVisible ? 'hide' : isScrolledUp ? 'show' : 'hide'}`}>
       <div className='fcb container h-100 overflow-hidden' ref={menuRef}>
         <Link to='/' onClick={() => setIsMenuOpen(false)}><Logo color='#002F87' width='85px' height='69px'></Logo></Link>
-        <button onClick={toggleMenu}><MenuLine /></button>
+        <button onClick={toggleMenu}><MenuLine width='28px' height='20px' /></button>
         <MenuTab setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       </div>
     </header>
