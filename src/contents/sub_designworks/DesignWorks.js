@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import allData from '../../data/allData.json';
 import Myswiper from '../../components/Myswiper';
 import Title from '../../components/Title';
+import { MoreBtnA } from '../../ui/commonUI';
 import './designworks.scss';
 
 export default function DesignWorks({ id, className, page = '' }) {
@@ -168,8 +169,10 @@ export default function DesignWorks({ id, className, page = '' }) {
         </div>
 
         {page !== "main" && (
-          <>
-          </>
+          <div className='mt-5 download'>
+          <MoreBtnA version='download' href='https://drive.google.com/file/d/1cgf1ifhNl5-UZY9uJwqcRJNEHi3rc_s0/view?usp=sharing' target='_blank' rel="noopener noreferrer">Download</MoreBtnA>
+          <p className='mt-3'>링크를 누르면 전체 작업물이 담긴 구글 드라이브 pdf 파일로 이동합니다.</p>
+          </div>
         )}
       </div>
     </div>
