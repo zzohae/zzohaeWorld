@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import RightArrow from '../assets/common/arrow_right.svg';
 
 export const MoreBtn = styled(Link).withConfig({
-  shouldForwardProp: (prop) => !['version', 'page'].includes(prop),
+  shouldForwardProp: (prop) => !['page'].includes(prop),
 })`
   width: 45px;
   height: 45px;
@@ -23,16 +23,10 @@ export const MoreBtn = styled(Link).withConfig({
   &:hover {
     background-color: var(--main1, #002F87);
   }
-  
-  ${(props) => props.version === 'mobile' && `
-    width: 45px;
-    height: 45px;
-  `}
-
-  ${(props) => props.version === 'pc' && `
-    width: 80px;
-    height: 80px;
-  `}
+  @media (min-width: 991px){
+    width: 60px;
+    height: 60px;
+  }
 `;
 
 export const MyLink = styled(Link)`
@@ -49,6 +43,9 @@ export const MyLink = styled(Link)`
       color: var(--point, #FFBB00);
     }
   }
+  @media (min-width: 991px){
+    font-size: var(--fs-20, 1.25rem);
+  }
   ${(props) => props.page === 'main' && `
     font-size: var(--fs-18, 1.125rem);
     font-weight: 600;
@@ -56,10 +53,13 @@ export const MyLink = styled(Link)`
     height: 20px;
     gap: 8px;
     &:hover {
-    color: var(--sub1, #F24E07);
-    svg path {
       color: var(--sub1, #F24E07);
+      svg path {
+        color: var(--sub1, #F24E07);
+      }
     }
-  }
+    @media (min-width: 991px){
+      font-size: var(--fs-24, 1.5rem);
+    }
   `}
 `;

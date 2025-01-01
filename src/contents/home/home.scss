@@ -31,6 +31,37 @@
     ul {
       gap: 12px;
     }
+    @media (min-width: 991px){
+      > svg {
+        width: 400px;
+        height: 400px;
+      }
+      .zzohae {
+        .catch {
+          font-size: var(--fs-24, 1.5rem);
+          line-height: 1;
+          span {
+            font-size: var(--fs-48, 3rem);
+          }
+        }
+        div {
+          margin-top: -30px;
+          gap: 10px;
+          h1 {
+            font-size: var(--fs-112, 7rem);
+            line-height: 1;
+            text-shadow: 0px 0px 3px var(--white-alter, #FEFEFE);
+          }
+          p {
+            font-size: var(--fs-32, 2rem);
+            font-weight: 600;
+          }
+        }
+      }
+      ul {
+        gap: 20px;
+      }
+    }
   }
 }
 

@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className='homeCont flex-column fcs'>
       <div className='c01main fcc'>
-        <div className='container flex-column fsc'>
+        <div className='container flex-column fsc flex-lg-row align-items-lg-center'>
           <Logo color='#002F87' width='160px' height='128px' />
           <div className='fsc flex-column' style={{gap:'30px'}}>
             <div className='zzohae'>
