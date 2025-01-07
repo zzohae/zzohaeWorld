@@ -81,7 +81,7 @@ export const MyLink = styled(Link)`
     }
   }
   @media (min-width: 991px){
-    font-size: var(--fs-20, 1.25rem);
+    font-size: var(--fs-18, 1.125rem);
   }
   ${(props) => props.page === 'main' && `
     font-size: var(--fs-18, 1.125rem);

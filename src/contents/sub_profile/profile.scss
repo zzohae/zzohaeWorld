@@ -3,30 +3,31 @@
 }
 .profileAll {
   .profileImg {
-    aspect-ratio: 1;
     width: 100%;
     background-color: #eee;
     align-self: center;
     position: relative;
+    background: url(../../assets/profilepic.jpg) 50% 20% no-repeat;
+    background-size: contain;
     @media (min-width: 767px) {
       width: 80%;
       max-width: 600px;
     }
     p {
-      height: 20%;
-      padding: 0 0 20px 20px;
+      height: 60%;
+      padding: 0 0 20px 60px;
       color: var(--text-default, #333);
       font-size: var(--fs-18, 1.125rem);
-      font-weight: 400;
+      font-weight: 500;
       position: absolute;
       left: 0;
       right: 0;
       z-index: 1;
       bottom: 0;
-      background: linear-gradient(0deg, rgba(254,254,254,1) 0%, rgba(254,254,254,0) 100%);
+      background: linear-gradient(0deg, rgba(254,254,254,1) 10%, rgba(254,254,254,0) 100%);
       [color-theme="dark"] & {
         height: 50%;
-        background: linear-gradient(0deg, rgba(31,31,31,1) 0%, rgba(31,31,31,0) 100%);
+        background: linear-gradient(0deg, rgba(31,31,31,1) 10%, rgba(31,31,31,0) 100%);
       }
     }
   }
@@ -83,7 +84,7 @@
       }
       .ability {
         gap: 5px;
-        padding: 0 10px 8px 10px;
+        padding: 6px 10px;
         border-bottom: 1px solid var(--text-minor-4, #ECECEC);
         flex-wrap: wrap;
         span {
