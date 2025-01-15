@@ -9,11 +9,18 @@
         width: 45%;
       }
     }
+    svg {
+      flex-shrink: 0;
+    }
+    h4 {
+      line-height: 1;
+    }
     h4 a {
       color: var(--text-default, #333);
-      font-size: var(--fs-20, 1.25rem);
+      font-size: var(--fs-24, 1.5rem);
       font-weight: 700;
       line-height: normal;
+      word-break: keep-all;
       &:hover {
         text-decoration: underline;
         text-decoration-thickness: 2px;

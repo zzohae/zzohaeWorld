@@ -4,7 +4,7 @@ import RightArrow from '../assets/common/arrow_right.svg';
 import ExtLink from '../assets/common/external_link.svg'
 
 export const MoreBtn = styled(Link).withConfig({
-  shouldForwardProp: (prop) => !['page', 'version'].includes(prop),
+  shouldForwardProp: (prop) => !['page'].includes(prop),
 })`
   width: 45px;
   height: 45px;
@@ -38,16 +38,15 @@ export const MoreBtnA = styled.a`
   height: 50px;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-radius: var(--br-full, 100px);
   background-color: var(--point, #FFBB00);
   cursor: pointer;
-  font-size: var(--fs-184 0.875rem);
+  font-size: var(--fs-14, 0.875rem);
   font-family: "Rubik Mono One", serif;
   font-weight: 400;
   color: var(--white-alter, #FEFEFE);
-  justify-content: flex-start;
   background-image: url(${ExtLink});
   background-position: calc(100% - 20px) 50%;
   background-size: 24px 24px;
@@ -98,5 +97,42 @@ export const MyLink = styled(Link)`
     @media (min-width: 991px){
       font-size: var(--fs-24, 1.5rem);
     }
+  `}
+`;
+
+export const WebWorkLink = styled.a.withConfig({
+  shouldForwardProp: (prop) => prop !== 'disabled',
+})`
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--br-full, 100px);
+  cursor: pointer;
+  font-size: var(--fs-18, 0.875rem);
+  font-family: "Pretendard Variable", serif;
+  font-weight: 300;
+  text-align: center;
+  color: var(--text-default, #333);
+  background-position: calc(100% - 20px) 50%;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  transition: color 0.3s, background-color 0.3s;
+  flex-shrink: 0;
+  [color-theme="dark"] & {
+    color: var(--text-default, #FEFEFE);
+  }
+  &:hover {
+    background-color: var(--sub1, #F24E07);
+    color: var(--white-alter, #FEFEFE);
+  }
+  ${(props) => props.disabled && `
+    opacity: 0.3;
+    cursor: default;
+    &:hover {
+    background-color: unset;
+    color: unset;
+  }
   `}
 `;
